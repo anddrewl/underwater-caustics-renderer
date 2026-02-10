@@ -7,7 +7,7 @@ Photon mapping (the light transport model used) creates sharp, focused patterns 
 
 The water surface is generated from rasterized **FFT-based triangle meshes**. A **Kd-tree** data structure accelerates ray tracing and makes radiance estimation for the "photon spheres" efficient.
 
-### Real-world underwater caustics (what we're trying to reproduce)
+### Rendered Scenes
 
 <p align="center">
   <img src="images/photon_light_source.jpg" alt="Two photon mapped light sources cast on the Cornell box" width="75%">
@@ -22,21 +22,18 @@ The water surface is generated from rasterized **FFT-based triangle meshes**. A 
 </p>
 
 ## Input / Output
-
 ### Input
 - A scene in `.obj` format
 - Materials defined in a companion `.mtl` file
-
 ### Output
 - Final rendered image saved as `.png`
 
 ## Compilation & Running
-
 - Open the project in **VS Code**
 - Compile using the **Build** task (bottom bar)
 - Run with **Shift + F5** (or via debugger)
 
-## Features / Techniques Used
+## Techniques Used
 - Photon mapping for caustics and global illumination
 - FFT-based water surface mesh generation
 - Kd-tree acceleration structure
